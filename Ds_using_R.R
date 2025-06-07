@@ -1,6 +1,6 @@
 #DATA SET 
 read.csv("path") -> pokemon
-view(pokemon)
+View(pokemon)
 
 #DATA PREPROCESSING 
 
@@ -47,19 +47,14 @@ mean(ghost_pokemon$sp_defense)
 library(ggplot2)
 
 #histogram
-ggplot(data=grass_pokemon,aes=(x=height_m)) +geom_histogram()
-ggplot(data=grass_pokemon,aes=(x=height_m)) +geom_histogram(fill="red")
+ggplot(data=coffee,aes(x=Final_sales)) +geom_histogram()
+ggplot(data=coffee,aes(x=Quantity)) +geom_histogram(fill="red")
 
 #barplot
-ggplot(data=grass_pokemon,aes=(x=is_legendary)) +geom_bar(fill="coral")
+ggplot(data=coffee,aes(x=City,fill=as.factor(City))) +geom_bar()
 
-#fire type pokemon
-pokemon %>% filter(primary_type=="fire") -> fire_pokemon
-view(fire_pokemon)
+ggplot(data=CostaRica,aes(x=Final_sales)) +geom_bar(fill="coral")
+ggplot(data=CostaRica,aes(x=Sales_amt)) +geom_bar(fill="turquoise")
 
-min(fire_pokemon$speed)
-max(fire_pokemon$speed)
-
-ggplot(data=fire_pokemon,aes=(x=generation,fill=as.factor(generation))) +geom_bar()
-ggplot(data=fire_pokemon,aes=(x=secondary_type,fill=as.factor(secondary_type)) +geom_bar()
+ggplot(data=Ethiopian,aes(x=Final_sales,fill=as.factor(Final_sales))) +geom_bar()
 
