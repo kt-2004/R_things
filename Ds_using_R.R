@@ -43,18 +43,5 @@ max(grass_pokemon$speed)
 mean(ghost_pokemon$sp_attack)#special attack
 mean(ghost_pokemon$sp_defense)
 
-#DATA VISUALIAZTION
-library(ggplot2)
 
-#histogram
-ggplot(data=coffee,aes(x=Final_sales)) +geom_histogram()
-ggplot(data=coffee,aes(x=Quantity)) +geom_histogram(fill="red")
-
-#barplot
-ggplot(data=coffee,aes(x=City,fill=as.factor(City))) +geom_bar()
-
-ggplot(data=CostaRica,aes(x=Final_sales)) +geom_bar(fill="coral")
-ggplot(data=CostaRica,aes(x=Sales_amt)) +geom_bar(fill="turquoise")
-
-ggplot(data=Ethiopian,aes(x=Final_sales,fill=as.factor(Final_sales))) +geom_bar()
 
