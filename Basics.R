@@ -22,23 +22,28 @@ data.frame(list)
 
 #DATATYPE EXAMPLES:------
 a <- FALSE
-class(a)
-li <-list(c(1,2,3,"hello"))
+class(a) #use to check datatype of variable
+#List
+li <-list(c(1,2,3,"hello")) 
 li
 class(li)
-li <-Array(c(1,2,3,4),dim=(3))
-li
-li <-matrix(c(1,2,3,4),nrow=2,ncol=2)
-li
-color <- c("black","red","grey")#character
+#Array
+arr <-Array(c(1,2,3,4),dim=(3)) 
+arr
+#Matrix
+mat <-matrix(c(1,2,3,4),nrow=2,ncol=2)
+mat
+#Character
+color <- c("black","red","grey")
 color
 class(color)
+#Factor
 color <- factor(c("black","red","grey"))
 color <- factor(c("black","red","grey"),levels=c("black","grey","red"))
 color
 class(color)
-nlevels(color)
-
+nlevels(color)#to check levels 
+#Dataframe
 df <-data.frame(color,li)
 df
 
